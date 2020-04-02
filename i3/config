@@ -215,7 +215,8 @@ bindsym $mod+shift+x exec i3lock -t -i ~/i3/retromountains.png
 bindsym $mod2+l exec i3lock -t -i ~/i3/retromountains.png
 
 #Wallpaper
-exec_always wallpaper-randomizer
+#For this to work you must have this installed from https://github.com/cnpeterson/dtrandomizer
+exec_always dtrandomizer -config=/home/cpeterson/github.com/cnpeterson/dtrandomizer/conf.yaml
 
 #Terminal Settings
 #Set in ~/.bashrc
