@@ -211,8 +211,8 @@ bar {
 
 
 #LockScreen Shortcut
-bindsym $mod+shift+x exec i3lock -t -i ~/i3/retromountains.png
-bindsym $mod2+l exec i3lock -t -i ~/i3/retromountains.png
+bindsym $mod+shift+x exec i3lock -t -i ~/i3/wallpaper/retromountains.png
+bindsym $mod2+l exec i3lock -t -i ~/i3/wallpaper/retromountains.png
 
 #Wallpaper
 #For this to work you must have this installed from https://github.com/cnpeterson/dtrandomizer
@@ -223,14 +223,14 @@ exec_always dtrandomizer -config=/home/cpeterson/github.com/cnpeterson/dtrandomi
 
 #To get xrandr settings run 'arandr'
 #Monitor Setup Single
-#exec_always xrandr --output eDP-1 --primary --mode 3840x2160 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off
+bindsym $mod2+1 exec  xrandr --output eDP-1 --primary --mode 3840x2160 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off
 #For single monitor setup, make sure you change ~/.Xresources
 
 #Monitor Setup Home
-exec_always xrandr --output eDP-1 --off --output DP-1 --off --output DP-2 --primary --mode 2560x1440 --pos 0x404 --rotate normal --output DP-3 --off --output DP-1-1 --mode 1920x1080 --pos 2560x0 --rotate left --output DP-1-2 --mode 1920x1080 --pos 3640x0 --rotate right --output DP-1-3 --off
+bindsym $mod2+2 exec xrandr --output eDP-1 --off --output DP-1 --off --output DP-2 --primary --mode 2560x1440 --pos 0x404 --rotate normal --output DP-3 --off --output DP-1-1 --mode 1920x1080 --pos 2560x0 --rotate left --output DP-1-2 --mode 1920x1080 --pos 3640x0 --rotate right --output DP-1-3 --off
 
 #Monitor Setup Office
-#exec_always xrandr --output eDP-1 --off --output DP-1 --off --output DP-2 --mode 2560x1440 --pos 4000x0 --rotate right --output DP-3 --off --output DP-1-1 --mode 2560x1440 --pos 2560x0 --rotate right --output DP-1-2 --primary --mode 2560x1440 --pos 0x1223 --rotate normal --output DP-1-3 --off
+bindsym $mod2+3 exec xrandr --output eDP-1 --off --output DP-1 --off --output DP-2 --mode 2560x1440 --pos 4000x0 --rotate right --output DP-3 --off --output DP-1-1 --mode 2560x1440 --pos 2560x0 --rotate right --output DP-1-2 --primary --mode 2560x1440 --pos 0x1223 --rotate normal --output DP-1-3 --off
 
 #Resizing Panes No Keyboard
 bindsym $mod+Ctrl+Right resize shrink width 1 px or 1 ppt
