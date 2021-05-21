@@ -94,4 +94,4 @@ nnoremap <leader>b :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " markdown composer
 let g:markdown_composer_autostart = 0
-let g:markdown_composer_browser = "google-chrome"
+let g:markdown_composer_browser = "google-chrome-stable"
